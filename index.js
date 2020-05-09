@@ -2,5 +2,7 @@
 import './style.css';
 
 // Write Javascript code!
-const canvas = document.getElementsByTagName('camvas')[0]
+const canvas = document.getElementsByTagName('camvas')[0].getContext('2d');
+canvas.fillStyle('white');
+canvas.fillR
 
