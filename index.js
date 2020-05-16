@@ -1,6 +1,6 @@
 // Import stylesheets
 import './style.css';
-
+import {Snake} './snake.js'
 // Write Javascript code!
 const canvas = document.getElementsByTagName('canvas')[0].getContext('2d');
 const snake = new Snake();
