@@ -11,7 +11,7 @@ export function Snake(x,y){
     this.y = this.y + (this.height * this.dy);
   }
   
-  this.show = function (){
+  this.show = function (canvas){
     canvas.fillStyle='white';
     canvas.fillRect(this.x,this.y,this.width,this.height);
   }
