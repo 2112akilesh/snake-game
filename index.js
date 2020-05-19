@@ -14,13 +14,13 @@ function generateFood(){
 
 
 function update(){
-  snake.update();
+  snake.update(canvas);
   generateFood();
 }
 
 function show(){
   canvas.clearRect(0,0,canvasWidth,canvasHeight)
-  snake.show();
+  snake.show(canvas);
   canvas.fillStyle='red';
   canvas.fillRect(food.x,food.y,snake.width,snake.height); 
 }
