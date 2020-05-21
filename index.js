@@ -1,19 +1,13 @@
 // Import stylesheets
 import './style.css';
 import {Snake} from './snake.js';
+import {generateFood} from './food.js';
 // Write Javascript code!
 const canvas = document.getElementsByTagName('canvas')[0].getContext('2d');
 const snake = new Snake();
 const canvasHeight = 200;
 const canvasWidth = 200;
 const food;
-
-function generateFood(){
-  const x = Math.floor(Math.random() * (canvasWidth/snake.width)* snake.width);
-  const y = Math.floor(Math.random() * (canvasHeight/snake.height)* snake.height);  
-  food = {x , y };
-}
-
 
 function update(){
   snake.update(canvas);

@@ -3,8 +3,8 @@ export function Snake(x,y){
   this.y = 0;
   this.dx = 1;
   this.dy = 0;
-  this.width = 20;
-  this.height = 20;
+  this.width = 10;
+  this.height = 10;
 
   this.update = function (){
     this.x = this.x + (this.width * this.dx);
