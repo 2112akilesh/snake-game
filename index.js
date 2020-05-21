@@ -7,11 +7,11 @@ const canvas = document.getElementsByTagName('canvas')[0].getContext('2d');
 const snake = new Snake();
 const canvasHeight = 200;
 const canvasWidth = 200;
-const food;
+let food;
 
 function update(){
   snake.update(canvas);
-  generateFood(food, canvasWidth, canvasHeight, snake);
+  food = generateFood(canvasWidth, canvasHeight, snake);
 }
 
 function show(){
