@@ -11,7 +11,7 @@ const food;
 
 function update(){
   snake.update(canvas);
-  generateFood();
+  generateFood(food, canvasWidth, canvasHeight, snake);
 }
 
 function show(){
