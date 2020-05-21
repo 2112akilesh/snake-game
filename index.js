@@ -9,7 +9,8 @@ const canvasWidth = 200;
 const food;
 
 function generateFood(){
-  food = {x: 50,y: 50};
+  const x = Math.floor( Math.random() * (canvasWidth/snake.Width)*snake.width);
+  food = {x , y: 50};
 }
 
 
