@@ -1,4 +1,4 @@
-export function Snake(x,y){
+export function Snake( x , y ){
   this.x = 0;
   this.y = 0;
   this.dx = 1;

@@ -27,7 +27,7 @@ document.addEventListener('keydown', (event) => {
     snake.dy = 1;
     snake.dx = 0;
   }
-}) 
+})
 
 function update(){
   snake.update(canvas);
