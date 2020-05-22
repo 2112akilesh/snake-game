@@ -11,16 +11,24 @@ let food;
 
 document.addEventListener ('keydown', (event) => {
   if(event.keycode == 37){
-
+    //left
+    snake.dx = -1;
+    snake.dy = 0;
   }
   else if(event.keycode == 38){
-
+    //up
+    snake.dy = 1;
+    snake.dx = 0;
   }
   else if(event.keycode == 39){
-    
+    //right  
+    snake.dx = 1; 
+    snake.dy = 0; 
   }  
   else if(event.keycode == 40){
-    
+    //down    
+    snake.dy = -1;
+    snake.dx = 0;
   }
 }) 
 
