@@ -9,6 +9,21 @@ const canvasHeight = 200;
 const canvasWidth = 200;
 let food;
 
+document.addEventListener ('keydown', (event) => {
+  if(event.keycode == 37){
+
+  }
+  else if(event.keycode == 38){
+
+  }
+  else if(event.keycode == 39){
+    
+  }  
+  else if(event.keycode == 40){
+    
+  }
+}) 
+
 function update(){
   snake.update(canvas);
   food = generateFood(canvasWidth, canvasHeight, snake);
