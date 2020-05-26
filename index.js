@@ -10,19 +10,20 @@ const canvasWidth = 200;
 let food;
 
 document.addEventListener('keydown', (event) => {
-  if(event.keycode == 37){
+  console.log(event.keyCode);
+  if(event.keyCode == 37){
     //left
     snake.dx = -1;
     snake.dy = 0;
-  } else if(event.keycode == 38){
+  } else if(event.keyCode == 38){
     //up
     snake.dy = -1;
     snake.dx = 0;
-  } else if(event.keycode == 39){
+  } else if(event.keyCode == 39){
     //right  
     snake.dx = 1; 
     snake.dy = 0; 
-  }  else if(event.keycode == 40){
+  }  else if(event.keyCode == 40){
     //down    
     snake.dy = 1;
     snake.dx = 0;
